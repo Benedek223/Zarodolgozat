@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="kepek\favicon-32x32.png">
+  <link rel="stylesheet" href="stilus.css">
+    <meta charset="utf-8">
+    <title>AdminReferencia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="Slideshow.css">
+    <script src="main.js"></script>
+    
+    <script src="node_modules\util.js\bin\util.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+        
+            <li class="nav-item">
+                <a class="nav-link " href="AdminReferencia.html">Képek</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Admin.html">Időpontok</a>
+            </li>
+           
+          </ul>
+          <div>
+            <button type="button" class="btn btn-warning" id="loggedInUser"></button>
+            <button type="button" class="btn btn-danger" onclick="logout()">Kijelentkezés</button>
+          </div>
+        </div>
+      </nav>
+     
+</head>
+
+<body onload="melyikNev(), kepek2(), kepek3()">
+    <div id="content">
+        <h2>Kép feltöltése vagy törlése</h2>
+        <input type="file" name="myfile" id="refKep" multiple accept="image/*" /><br/><br/>  
+        <input type="submit" class="nyomogomb" value="Kép feltöltése" name="submit" onclick="kepnev()"> 
+        <input type="submit" class="nyomogomb" value="Kép Törlése" name="submit" onclick="keptorles()"> 
+        <span class="uzenet" id="kepfeltoltesstatus"></span>        
+       </div>
+  <div id="content">
+    
+    <table>
+<tr id="referencia"></tr>
+    </table>
+    
+  </div>
+  
+  
+  
+
+  
+  
+ 
+
+
+</body>
+
+</html>

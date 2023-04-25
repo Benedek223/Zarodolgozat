@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="kepek\favicon-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stilus.css">
+    <meta charset="utf-8">
+    <title>Brutal Barbers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script src="main.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="loggedIn.html">Brutal Barbers</a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="Idopontfoglalas.html">Időpontfoglalás</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="Referenciaink.html">Referenciáink</a>
+            </li>
+            <li class="nav-item">
+             <a href="https://www.instagram.com/brutalbarberzz/" class="nav-link" target=”_blank”>Instagram</a>
+            </li>
+          </ul>
+          <div>
+            <button type="button" class="btn btn-warning" id="loggedInUser"></button>
+            <button type="button" class="btn btn-danger" onclick="logout()">Kijelentkezés</button>
+          </div>
+        </div>
+      </nav>
+      
+</head>
+
+<body onload="melyikNev()">
+  <div id="content" >
+<h2>Üdvözöllek a Brutal Barbers férfi fodrászat weblapján!</h2>
+
+    <h3>Fodrászaink örömmel és családias hangulattál várnak téged.<br>
+      A fodrászat régies stílusa de korszerű eszközei igyekszenek<br> 
+      fiatal és idős számára a tökéletes kényelmet és otthoniasságot megadni.<br>
+    </h3>
+    <h3>Jelenleg két fodrász dolgozik csapatunkban akik örömmel várják az új vendégeinket, kihívásaikat, hogy ügyfeleink <br>
+      megkapják a kellő elégedettségeiket.</h3>
+      <h3>Nevük szerint: <a href="https://www.facebook.com/gergo.sandor.9" class="nav-link" target=”_blank”>Sándor Gergő</a> és <a href="https://www.instagram.com/karlosz_boyka/" class="nav-link" target=”_blank”>Szabó Róbert</a> 
+
+      </h3>
+    <div class="kezdolap">
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item">
+            <img src="kepek\BrutalFodraszok.png" class="d-block w-100 c-img" alt="Fodraszaink" title="Fodrászaink">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fodrászaink</h5>
+              <p>Sándor Gergő és Szabó Róbert</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="kepek\Szalon.jpg" class="d-block w-100 c-img" alt="Szalon" title="Szalon">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Szalonunk</h5>
+              <p>Régies de mégis új megjelenésű bútorok és berendezések</p>
+            </div>
+          </div>
+          <div class="carousel-item c-item">
+            <img src="kepek\Gepek.jpg" class="d-block w-100 c-img" alt="Gepek" title="Gépek">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Eszközeink</h5>
+              <p>Modern és korszerű eszközök</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+ 
+
+
+</body>
+
+</html>

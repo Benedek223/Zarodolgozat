@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="kepek\favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stilus.css">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active navbar-nav ml-auto " href="#">Brutal Barbers</a>
+              
+            </li>
+          
+           
+           
+          </ul>
+          <div> <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registration">
+            Regisztráció
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login">
+            Belépés
+        </button></div>
+        </div>
+      </nav>
+    <style>
+       
+        </style>
+
+    <meta charset="utf-8">
+    <title>Regisztráció</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <script src="main.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+<div id="content" class="col-sm-6">
+    Kérlek jelentkezz be vagy regisztrálj az oldal használatához!</h2>
+    
+</div>
+<!-- Regisztráció Modal -->
+    <div class="modal" id="registration">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Regisztráció</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"><link rel="stylesheet" href=""></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label class="form-label">Felhasználó név</label>
+                    <input class="form-control" type="text" name="felhasznaloinev" id="regUser" required>
+                    <label class="form-label">Jelszó</label>
+                    <input class="form-control" type="password" name="jelszo1" id="regPass1" required>
+                    <label class="form-label">Jelszó újra</label>
+                    <input class="form-control" type="password" name="jelszo2" id="regPass2" required>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-xl" onclick="felhasznaloVanEMar()">Regisztráció</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Modal -->
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Bejelentkezés</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <label class="form-label">Felhasználó név</label>
+                    <input class="form-control" type="text" name="felhasznaloinev" id="loginUser" required>
+                    <label class="form-label">Jelszó</label>
+                    <input class="form-control" type="password" name="jelszo1" id="loginPass" required>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button class="btn btn-primary btn-xl" onclick="userLogin()"
+                        data-bs-dismiss="modal">Bejelentkezés</button>
+                    
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                        onclick="userDelete()">Törlés</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
