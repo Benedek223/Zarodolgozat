@@ -14,5 +14,5 @@ Használat:
 3. XAMPP indítása az adatbázis eléréséhez
 
 Felhasználók és jelszavaik:
-admin - 123
-Tesztalany - Teszt123
+- admin - 123
+- Tesztalany - Teszt123
